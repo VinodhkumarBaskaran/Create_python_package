@@ -2,46 +2,29 @@ import os
 from pathlib import Path
 import logging
 
+package_name = "mongodb_connect"
+
 # list of files and folder required for project development
-list_of_files =[
-    
-    ".github/workflows/.gitkeep",    # CI/CD --> Continuous Integration and Continuous Deployment
-    "src/__init__.py",
-    
-    "src/components/__init__.py", # Step by step components of ML project
-    "src/components/data_injection.py",
-    "src/components/data_transformation.py",
-    "src/components/model_trainer.py",
-    "src/components/data_evaluation.py",
-    
-    "src/pipeline/__init__.py",
-    "src/pipeline/training_pipeline.py",
-    "src/pipeline/prediction_pipeline.py",
-    
-    "src/utils/__init__.py",
-    "src/utils/utils.py",
-    
-    "src/logger/logging.py",
-    "src/exception/exception.py", # testing logic and other snippnets
-    
-    "tests/unit/__init__.py",
-    "tests/unit/unit.py",
-    "tests/integration/__init__.py",
-    "tests/integration/int.py",
-
-    
-    "init_setup.sh",
-    
-    "requirement.txt",
-    "requirement_dev.txt",
-
-    "setup.py",
-    "setup.cfg",
-    
-    "pyproject.toml",
-    "tox.ini",
-    "experiment/experiments.ipynb"
+list_of_files = [
+   ".github/workflows/ci.yaml",
+   "src/__init__.py",
+   f"src/{package_name}/__init__.py", 
+   f"src/{package_name}/mongo_crud.py", 
+   "tests/__init__.py",
+   "tests/unit/__init__.py",
+   "tests/unit/unit.py",
+   "tests/integration/__init__.py",
+   "tests/integration/int.py",
+   "init_setup.sh",
+   "requirements.txt", 
+   "requirements_dev.txt",
+   "setup.py",
+   "setup.cfg",
+   "pyproject.toml",
+   "tox.ini",
+   "experiments/experiments.ipynb", 
 ]
+
 
 
 for filepath in list_of_files:
