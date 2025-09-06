@@ -5,10 +5,10 @@ import logging
 # list of files and folder required for project development
 list_of_files =[
     
-    ".github/workflows/.gitkeep",   
+    ".github/workflows/.gitkeep",    # CI/CD --> Continuous Integration and Continuous Deployment
     "src/__init__.py",
     
-    "src/components/__init__.py",
+    "src/components/__init__.py", # Step by step components of ML project
     "src/components/data_injection.py",
     "src/components/data_transformation.py",
     "src/components/model_trainer.py",
@@ -22,7 +22,7 @@ list_of_files =[
     "src/utils/utils.py",
     
     "src/logger/logging.py",
-    "src/exception/exception",
+    "src/exception/exception.py", # testing logic and other snippnets
     
     "tests/unit/__init__.py",
     "test/integration/__init__.py",
