@@ -25,6 +25,7 @@ list_of_files =[
     "src/exception/exception.py", # testing logic and other snippnets
     
     "tests/unit/__init__.py",
+    "tests/unit/unit.py",
     "tests/integration/__init__.py",
     "tests/integration/int.py",
 
